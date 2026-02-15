@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:background="@color/cardview_light_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/datetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="@dimen/textsize"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintdate"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            app:layout_constraintTop_toTopOf="@+id/constraintdate"/>
+
+        <EditText
+            android:id="@+id/datepick"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="DD-MM-YYYY"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintEnd_toEndOf="@+id/constraintdate"
+            app:layout_constraintTop_toTopOf="@id/constraintdate"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:inputType="date"
+            android:focusable="false"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/constraintdate"
+        >
+
+        <TextView
+            android:id="@+id/nametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marker Name"
+            android:textSize="@dimen/textsize"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintname"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            app:layout_constraintTop_toTopOf="@+id/constraintname"/>
+
+        <EditText
+            android:id="@+id/nameedit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintEnd_toEndOf="@+id/constraintname"
+            app:layout_constraintTop_toTopOf="@id/constraintname"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:inputType="text"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintvehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/constraintname"
+        >
+
+        <TextView
+            android:id="@+id/vehicletxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Number"
+            android:textSize="@dimen/textsize"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintvehicle"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            app:layout_constraintTop_toTopOf="@+id/constraintvehicle"/>
+
+        <EditText
+            android:id="@+id/vehicleedit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Vehicle Number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintEnd_toEndOf="@+id/constraintvehicle"
+            app:layout_constraintTop_toTopOf="@id/constraintvehicle"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:inputType="text"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintbuyer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/constraintvehicle"
+        >
+
+        <TextView
+            android:id="@+id/buyertxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buyer Name"
+            android:textSize="@dimen/textsize"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintbuyer"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            app:layout_constraintTop_toTopOf="@+id/constraintbuyer"/>
+
+        <EditText
+            android:id="@+id/buyeredit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Buyer Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintEnd_toEndOf="@+id/constraintbuyer"
+            app:layout_constraintTop_toTopOf="@id/constraintbuyer"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:inputType="text"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintloadrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/constraintbuyer"
+        >
+
+        <TextView
+            android:id="@+id/loadratetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate of Loading"
+            android:textSize="@dimen/textsize"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintloadrate"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            app:layout_constraintTop_toTopOf="@+id/constraintloadrate"/>
+
+        <EditText
+            android:id="@+id/loadrateedit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            android:hint="Rate per Ton"
+            app:layout_constraintEnd_toEndOf="@+id/constraintloadrate"
+            app:layout_constraintTop_toTopOf="@id/constraintloadrate"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:inputType="number"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintweight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/constraintloadrate"
+        >
+
+        <TextView
+            android:id="@+id/weighttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:textSize="@dimen/textsize"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintweight"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            app:layout_constraintTop_toTopOf="@+id/constraintweight"/>
+
+        <EditText
+            android:id="@+id/weightedit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            android:hint="in Ton"
+            app:layout_constraintEnd_toEndOf="@+id/constraintweight"
+            app:layout_constraintTop_toTopOf="@id/constraintweight"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:inputType="number"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/constraintweight"
+        >
+
+        <TextView
+            android:id="@+id/ratetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate (per Ton)"
+            android:textSize="@dimen/textsize"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintrate"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            app:layout_constraintTop_toTopOf="@+id/constraintrate"/>
+
+        <EditText
+            android:id="@+id/rateedit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            android:hint="per Ton"
+            app:layout_constraintEnd_toEndOf="@+id/constraintrate"
+            app:layout_constraintTop_toTopOf="@id/constraintrate"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:inputType="number"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintbillamt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/constraintrate"
+        >
+
+        <TextView
+            android:id="@+id/billtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bill Amount"
+            android:textSize="@dimen/textsize"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintbillamt"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            app:layout_constraintTop_toTopOf="@+id/constraintbillamt"/>
+
+        <EditText
+            android:id="@+id/billamtedit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            android:hint="in Rupees"
+            app:layout_constraintEnd_toEndOf="@+id/constraintbillamt"
+            app:layout_constraintTop_toTopOf="@id/constraintbillamt"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:inputType="number"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainttotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/constraintbillamt"
+        android:layout_marginBottom="5dp"
+        >
+
+        <TextView
+            android:id="@+id/totalctxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount"
+            android:textSize="@dimen/textsize"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toLeftOf="@+id/constrainttotal"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            app:layout_constraintTop_toTopOf="@+id/constrainttotal"/>
+
+        <TextView
+            android:id="@+id/totalcedit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintEnd_toEndOf="@+id/constrainttotal"
+            app:layout_constraintTop_toTopOf="@id/constrainttotal"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintgst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/constrainttotal"
+        android:layout_marginBottom="5dp"
+        >
+
+        <TextView
+            android:id="@+id/gsttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GST"
+            android:textSize="@dimen/textsize"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintgst"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            app:layout_constraintTop_toTopOf="@+id/constraintgst"/>
+
+        <TextView
+            android:id="@+id/gstedit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintEnd_toEndOf="@+id/constraintgst"
+            app:layout_constraintTop_toTopOf="@id/constraintgst"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintcash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/constraintgst"
+        android:layout_marginBottom="5dp"
+        >
+
+        <TextView
+            android:id="@+id/cashtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash Amount"
+            android:textSize="@dimen/textsize"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintcash"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            app:layout_constraintTop_toTopOf="@+id/constraintcash"/>
+
+        <TextView
+            android:id="@+id/cashedit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintEnd_toEndOf="@+id/constraintcash"
+            app:layout_constraintTop_toTopOf="@id/constraintcash"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintloading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/constraintcash"
+        android:layout_marginBottom="5dp"
+        >
+
+        <TextView
+            android:id="@+id/loadingtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading Cost"
+            android:textSize="@dimen/textsize"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintloading"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            app:layout_constraintTop_toTopOf="@+id/constraintloading"/>
+
+        <TextView
+            android:id="@+id/loadingedit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintEnd_toEndOf="@+id/constraintloading"
+            app:layout_constraintTop_toTopOf="@id/constraintloading"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintbutton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/constraintloading"
+        >
+
+        <Button
+            android:id="@+id/calbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:background="@color/cardview_dark_background"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintbutton"
+            app:layout_constraintBottom_toTopOf="@id/pdfbutton"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/pdfbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate PDF"
+            android:background="@color/cardview_dark_background"
+            app:layout_constraintRight_toRightOf="@+id/constraintbutton"
+            app:layout_constraintLeft_toRightOf="@+id/calbutton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
